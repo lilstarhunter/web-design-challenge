@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Analysis</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Weather Analysis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="temp.html">Temperature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="humidity.html">Humidity</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cloud.html">Cloudiness</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wind.html">Windspeed</a>
+              </li>
+          </ul>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <!--Bootstrap Grid-->
+    <section> 
+    <div class = "column">
+        <!--Row 1 Header -->
+        <div class = "row"> 
+            <div class = "col">
+                <h1>Latitude</h1>
+            </div>
+        </div>
+
+      <!--Row 2 Sub-Header -->
+      <div class = "row"> 
+        <div class = "col">
+          <h2>Summary: Latitude vs. Weather Metrics </h2>
+        </div>
+      </div>
+    </section>
+    <!--Row 3 Project description -->
+    <section> 
+    <div class = "row"> 
+        <div class = "col">
+            <p> The purpose of this project is to analyze weather changes as you get closer to the equator.
+                To accomplish this analyis, we first pulled data from OpenWeatherMap API to assemble a
+                dataset on over 500 cities.
+                <br><br>After aseembling the dataset, we used Matplotlib to plot various aspects
+                of the weather vs. latitude. 
+                Factors we looked at included:temperature, cloudiness, wind speed, and humidity. This site provides the source data and
+                visualziations created as part of the analysis, as well as explanations and desscriptions of any
+                trends and correlations observeed.
+            <br>
+            <h2>Weather Metrics</h2>
+                <!--Unordered list of metrics-->
+                <ul>
+                <li>Temperature</li>
+                <li>Humidity</li>
+                <li>Cloudiness</li>
+                <li>Windspeed</li>
+                </ul>  
+            </p>
+        </div>
+    </div>
+    </section>  
+  <!--Row 4 Sub-Header -->
+    <section>
+    <div class = "row"> 
+        <div class = "col-sm">
+        <h2>Visualizations</h2>
+            <hr>
+            <br>
+        </div>
+    </div>
+    
+    <!-- Row 5 Graphs -->
+    <!--Temp/Lat-->
+    <div class = "row"> 
+        <div class="col">
+            <article class="box"> 
+                <a target="_blank" href="temp.html">
+                    <img src="/Resources/lms_assets/temp_lat.png", width="400", height = "275">
+                </a>
+                <a target="_blank" href="humidity.html">
+                    <img src="/Resources/lms_assets/hum_lat.png", width="400", height = "275">
+                </a>
+                <a target="_blank" href="cloud.html">
+                    <img src="/Resources/lms_assets/cloud_lat.png", width="400", height = "275">
+                </a>
+                <a target="_blank" href="wind.html">
+                    <img src="/Resources/lms_assets/wind_lat.png", width="400", height = "275">
+                </a>
+            </article>  
+        </div>
+    </div>
+    </section>  
+</div>
+</body>
+</html>

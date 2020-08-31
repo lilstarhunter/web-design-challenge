@@ -36,3 +36,18 @@ hr {
   margin-left: 15px;
   margin-right: 15px;
 }
+
+.box {
+  min-height: 50px;
+  padding: 5px;
+  margin: 5px;
+}
+
+/*footer styling*/
+.page-footer{
+  background-color: rgb(92, 90, 90);
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
