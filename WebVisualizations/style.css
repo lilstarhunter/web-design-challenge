@@ -1,47 +1,19 @@
 
 h1 {
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
     color: white;
     background-color: rgb(47, 145, 145) ;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
 h2 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
   color: rgb(47, 145, 145);
   font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 p {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
   font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-a {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-hr {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.box {
-  min-height: 50px;
-  padding: 5px;
-  margin: 5px;
-}
 
 /*footer styling*/
 .page-footer{
