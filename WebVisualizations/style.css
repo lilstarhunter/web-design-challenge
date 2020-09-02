@@ -4,11 +4,17 @@ html {background-color: lightgrey}
 /* Headers Font/Color/Background */
 h1 {
     color: white;
-    background-color: rgb(47, 145, 145)
+    background-color: rgb(47, 145, 145);
+    padding: 10px 10px 10px 35px;
   }
 
 h2 {
   color: rgb(47, 145, 130);
+}
+.box-container-green {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(47, 145, 130);
 }
 
 .box-container {
