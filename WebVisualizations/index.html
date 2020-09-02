@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Analysis</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
      <!-- Bootstrap CDN -->
     <!-- CSS only -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -31,11 +32,11 @@
             <a class="nav-link" href="data.html">Data</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="compare.html">Compare</a>
+            <a class="nav-link" href="compare.html">Comparison</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Weather Links
+              Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="temp.html">Temperature</a>
@@ -63,72 +64,70 @@
     </div>
 
     <!--Sub-Header -->
-    <div class = "container-fluid" style=margin-top:30px>
-      <h2>Summary: Latitude vs. Weather Metrics </h2>
-    </div>
-
-    <!--Summary Paragraph 1 row-->
-    <div class="container-fluid">
-      <div class = "row"> 
-        <div class = "col">
-            <p> The purpose of this project is to analyze weather changes as you get closer to the equator.
-                To accomplish this analyis, we first pulled data from OpenWeatherMap API to assemble a
-                dataset on over 500 cities.</p>
-             <p>After aseembling the dataset, we used Matplotlib to plot various aspects
-                of the weather vs. latitude. 
-                Factors we looked at included:temperature, cloudiness, wind speed, and humidity. This site provides the source data and
-                visualziations created as part of the analysis, as well as explanations and desscriptions of any
-                trends and correlations observeed.</p>
-            <br>
+    <div class = "box-container">
+      <div class="box">
+        <div class = "container-fluid" style=margin-top:30px>
+          <h2>Summary: Latitude vs. Weather Metrics </h2>
+          <hr>
+        </div>
+      <!--Summary Paragraph 1 row-->
+        <div class="container-fluid" style="margin-top:30px;">
+          <div class = "row">
+            <div class = "col-8">
+                <p> The purpose of this project is to analyze weather changes as you get closer to the equator.
+                    To accomplish this analyis, we first pulled data from OpenWeatherMap API to assemble a
+                    dataset on over 500 cities.</p>
+                <p>After aseembling the dataset, we used Matplotlib to plot various aspects
+                  of the weather vs. latitude. 
+                  Factors we looked at included:temperature, cloudiness, wind speed, and humidity. This site provides the source data and
+                  visualziations created as part of the analysis, as well as explanations and desscriptions of any
+                  trends and correlations observeed.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    
-    <!--Sub-Header-->
-      <div class = "container-fluid" style="margin-top:10px;">
-        <h2>Weather Metrics</h2>
-      </div>
-       <!--Unordered list of metrics-->
-       <div class = "container-fluid">
-          <ul>
-            <li>Temperature</li>
-            <li>Humidity</li>
-            <li>Cloudiness</li>
-            <li>Windspeed</li>
-          </ul>  
-        </div>
-
     <!--Sub-Header--> 
-    <div class = "container-fluid" style="margin-top:30px;">
-      <h2>Visualizations</h2>
-      <hr>
-    </div>
-
-    <!-- Row 5 Graphs -->
-    <!--Temp/Lat-->
-    <div class = "container-fluid" style="margin-top:30px;">
-      <div class = "row"> 
-        <div class="col-sm-12, col-md-6, col-l-3">
-          <a target="_blank" href="temp.html">
-              <img src="/Resources/lms_assets/temp_lat.png">
-          </a>
-        </div>
-        <div class="col-sm-12, col-md-6, col-l-3">
-          <a target="_blank" href="humidity.html">
-              <img src="/Resources/lms_assets/hum_lat.png">
-          </a>
-        </div>
-        <div class="col-sm-12, col-md-6, col-l-3">   
-          <a target="_blank" href="cloud.html">
-              <img src="/Resources/lms_assets/cloud_lat.png">
-          </a>
-        </div>
-        <div class="col-sm-12, col-md-6, col-l-3">
-          <a target="_blank" href="wind.html">
-              <img src="/Resources/lms_assets/wind_lat.png">
-          </a>
+    <div class = "box-container">
+      <div class = "box">
+        <div class = "container-fluid" style="margin-top:30px;">
+          <h2>Visualizations</h2>
+          <hr>
+           <!--Graphs-->
+          <div class = "container-fluid" style="margin-top:30px;">
+            <div class = "row"> 
+              <div class="col-sm-12, col-md-6, col-l-3">
+                <a target="_blank" href="temp.html">
+                    <img src="/Resources/lms_assets/temp_lat.png">
+                </a>
+              </div>
+              <div class="col-sm-12, col-md-6, col-l-3">
+                <a target="_blank" href="humidity.html">
+                    <img src="/Resources/lms_assets/hum_lat.png">
+                </a>
+              </div>
+              <div class="col-sm-12, col-md-6, col-l-3">   
+                <a target="_blank" href="cloud.html">
+                    <img src="/Resources/lms_assets/cloud_lat.png">
+                </a>
+              </div>
+              <div class="col-sm-12, col-md-6, col-l-3">
+                <a target="_blank" href="wind.html">
+                    <img src="/Resources/lms_assets/wind_lat.png">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+
+    <!--Footer-->
+    <div class="footer">
+      <p class="alignleft">Designed by: Lauren Stein</p>
+      <p class="alignright">steinlm@pennmedicine.upenn.edu</p>
+    </div>
+    <div style="clear: both;"></div>
 </body>
 </html>
