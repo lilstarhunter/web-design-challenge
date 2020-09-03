@@ -39,8 +39,7 @@ body.a{
 
 .col-md-12{
   background-color: white;
-  padding-top: 20px;
-  padding-bottom:40px;
+  padding: 20px;
 }
 
 /* 
@@ -64,26 +63,22 @@ p.a{
   
 }
 
+.green_border {
+  border-style: solid;
+  border-color:rgb(47, 145, 145);
+}
 
 
 /*footer styling*/
-.footer,
-.push {
-  color: whitesmoke;
-  background-image: linear-gradient(130deg, lightgrey, rgb(47, 145, 145));
-  font-variant: small-caps;
-  padding:10px 10px 0px 10px;
-  height: 50px;
-}
-
-/* .footer{
+.footer {
+    position:absolute;
+    color: whitesmoke;
+    bottom:0;
+    width:100%;
+    height:30px;
+    background-image: linear-gradient(130deg, lightgrey, rgb(47, 145, 145))
+ }
   
-  position: fixed;
-  bottom: 0;
-  height: 2%;
-  width: 100%;
-} */
-
 
 .alignright {
 	float: right;
