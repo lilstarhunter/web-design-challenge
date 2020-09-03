@@ -2,7 +2,7 @@
 **Completed By:** Lauren Stein\
 **Objective:** Use HTML, CSS and BOOTSTRAP to create a web page that displays the raw data file and associated graphs from the OpenWeather API analysis of latitude vs. weather metrics. 
 
-<img src="">
+<img src="/Resources/lms_assets/Screen Shot 2020-09-03 at 6.16.45 PM.png">
 ---
 
 ## Web Visualization Dashboard
