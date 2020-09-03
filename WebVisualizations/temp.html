@@ -47,19 +47,39 @@
             </div>
           </li>
         </ul>
-
       </div>
     </nav>
 
   <!--BODY -->
   <div class = "container-fluid content">
     <div class = "row">
-      <div class = "col-md-8 ">
+      <div class = "col-md-8">
         <div class= "col-md-12">
-          <h2>Summary: Latitude vs. Temperature </h2>
+          <h2>Analysis: Latitude vs. Temperature </h2>
           <hr>
-            <img class="float-left" src="/Resources/lms_assets/temp_lat.png">
-              <p class="a">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quam ipsa ab saepe iste odit magnam, officia sequi sint eaque, laborum voluptatem maxime nulla omnis non, ea soluta beatae! Dolore!</p>
+          <!--Cloudiness Graphs-->
+          <div class = "row"> 
+            <div class="col-sm-12 col-md-6">
+                <img src="/Resources/lms_assets/north_maxtemp_lat_regress.png" width = 100%>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class = "green_border">
+                <img src="/Resources/lms_assets/temp_lat.png" width="100%">
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6"> 
+                  <img src="/Resources/lms_assets/south_maxtemp_lat_regress.png" width="100%">
+            </div>
+          </div>
+          <div class = "row">
+            <p class="a"> In analyzing maximum temperature according to latitude a clear pattern emerged in which the further a city was to the northern or southern pole the lower the temperature.
+              Conversely, the closer a city is to the equator, this higher the temperature. When northern and southern hemispheres are plotted together, there is no correlation due to this unimodal distribution of the data.
+              As expected, parsing the data into Northern and Southern hemisphere revealed a significant relationship.
+              <strong><em>There is a weak, albeit significant, negative correlation between city latitude and max temperature for cities located in the northern hemisphere.
+              There is a strong positive correlation between the city latitude and max tempearture for cities in the southern hemisphere.</strong></em>
+              
+            </p>
+          </div>  
         </div>
       </div>
       <div class = "col-md-4">
@@ -93,8 +113,8 @@
             </div>
           </div>    
         </div>            
-      </div>            
-    </div>
+    </div>            
+  </div>
   
       <!--Footer-->
   <div class="footer">

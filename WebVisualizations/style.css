@@ -136,3 +136,10 @@ p.a{
   background-color: rgb(47, 145, 145); 
   color: white;
 }
+
+/* small screen adjustments*/
+@media(max-width:767px){
+  .navbar{
+      padding:inherit;
+  }
+}
