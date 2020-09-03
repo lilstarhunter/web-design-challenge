@@ -1,6 +1,5 @@
 /* Default Webpage Background Color */
 
-
 /* navbar styling*/
 a.navbar-brand{
   margin-left: 10px;
@@ -8,7 +7,6 @@ a.navbar-brand{
   padding: 10px;
   font-size: 25px;
 }
-
 
 /* Headers Font/Color/Background */
 h1 {
@@ -33,6 +31,7 @@ h3 {
 
 /* content styling*/
 .content {
+  background-color: lightgrey;
   padding: 50px 10px 80px 10px;
   overflow: hidden;
 }
@@ -100,4 +99,27 @@ p.a{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+/*Table formatting */
+#weather {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#weather td, #weather th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#weather tr:nth-child(even){background-color: #f2f2f2;}
+
+#weather tr:hover {background-color: #ddd}
+
+#weather th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: rgb(47, 145, 145); 
+  color: white;
 }
