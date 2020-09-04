@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Analysis</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./html_pages/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
      <!-- Bootstrap CDN -->
     <!-- CSS only -->
@@ -26,56 +26,57 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
+            <a class="nav-link" href="./data.html">Data</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="compare.html">Comparison</a>
+            <a class="nav-link" href="./compare.html">Comparison</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="temp.html">Temperature</a>
-              <a class="dropdown-item" href="humidity.html">Humidity</a>
-              <a class="dropdown-item" href="cloud.html">Cloudiness</a>
-              <a class="dropdown-item" href="wind.html">Windspeed</a>
-
+              <a class="dropdown-item" href="./html_pages/temp.html">Temperature</a>
+              <a class="dropdown-item" href="./html_pages/humidity.html">Humidity</a>
+              <a class="dropdown-item" href="./html_pages/cloud.html">Cloudiness</a>
+              <a class="dropdown-item" href="./html_pages/wind.html">Windspeed</a>
+  
             </div>
           </li>
         </ul>
       </div>
     </nav>
 
+
   <!--BODY -->
   <div class = "container-fluid content">
     <div class = "row">
       <div class = "col-md-8">
         <div class= "col-md-12">
-          <h2>Analysis: Latitude vs. Windspeed </h2>
+          <h2>Analysis: Latitude vs. Humidity </h2>
           <hr>
           <!--Cloudiness Graphs-->
           <div class = "row"> 
             <div class="col-sm-12 col-md-6">
-                <img src="/Resources/lms_assets/north_wind_lat_regress.png" width = 100%>
+                <img src="/assets/north_humidity_lat_regress.png" width = 100%>
             </div>
             <div class="col-sm-12 col-md-6">
               <div class = "green_border">
-                <img src="/Resources/lms_assets/wind_lat.png" width="100%">
+                <img src="/assets/hum_lat.png" width="100%">
               </div>
             </div>
             <div class="col-sm-12 col-md-6"> 
-                  <img src="/Resources/lms_assets/south_wind_lat_regress.png" width="100%">
+                  <img src="/assets/south_humidity_lat_regress.png" width="100%">
             </div>
           </div>
           <div class = "row">
-            <p class="a"> Whether combined, or parsed into hemispheres, there is no relationship between latitude and windspeed.
-              Of note, there are significantly fewer data points for the southern hemisphere. Further analysis taking into account time of year may provide seasonal differences and a potential correlation.
-              <strong><em>To summarize, there is no association between latitude and windspeed, even when analyzing within either the northern or southern hemisphere.</strong></em>
-              
+            <p class="a">
+              Surprisingly, linear regression analysis revealved no significant correlation between latittude and humidity percentage.
+              Of note, there are significantly fewer data points for the southern hemisphere. Further analysis taking into account time of year may provide seasonal differences and potential correlation.
+              <strong><em>To summarize, there is no association between latitude and humidity, even when analyzing within either the northern or southern hemisphere.</strong></em>
             </p>
           </div>  
         </div>
@@ -88,25 +89,25 @@
             <div class = "row"> 
               <div class="col-3 col-md-6">
                 <a target="_blank" href="temp.html">
-                  <img src="/Resources/lms_assets/temp_lat.png" width="100%"  title="temperature">  
-                </a>
-              </div>
-              <div class="col-3 col-md-6">          
-                  <a target="_blank" href="humidity.html">
-                      <img src="/Resources/lms_assets/hum_lat.png" width="100%"  title="humidity">
-                  </a>
-              </div>
-              <div class="col-3 col-md-6"> 
-                <a target="_blank" href="cloud.html">
-                    <img src="/Resources/lms_assets/cloud_lat.png" width="100%"  title="cloudiness">
+                  <img src="/assets/temp_lat.png" width="100%"  title="temperature">  
                 </a>
               </div>
               <div class="col-3 col-md-6">
                 <div class = "green_border">
-                <a target="_blank" href="wind.html">
-                    <img src="/Resources/lms_assets/wind_lat.png" width="100%"  title="windspeed">
+                  <a target="_blank" href="humidity.html">
+                      <img src="/assets/hum_lat.png" width="100%"  title="humidity">
+                  </a>
+                </div>
+              </div>
+              <div class="col-3 col-md-6"> 
+                <a target="_blank" href="cloud.html">
+                    <img src="/assets/cloud_lat.png" width="100%"  title="cloudiness">
                 </a>
               </div>
+              <div class="col-3 col-md-6">
+                <a target="_blank" href="wind.html">
+                    <img src="/assets/wind_lat.png" width="100%"  title="windspeed">
+                </a>
               </div> 
             </div>
           </div>    

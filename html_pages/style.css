@@ -1,0 +1,145 @@
+/* Default Webpage Background Color */
+
+/* navbar styling*/
+a.navbar-brand{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 25px;
+  
+}
+
+/* Headers Font/Color/Background */
+h1 {
+    color: white;
+    padding: 10px 10px 10px 35px;
+  }
+
+.navbar-brand{
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link{
+  color: white
+}
+
+#grad1 {
+    color: white;
+    height: 70px;
+    background-image: linear-gradient(130deg, rgb(47, 145, 145), lightgrey); 
+  }
+
+h2 {
+  color: rgb(47, 145, 130);
+}
+
+h3 {
+  color: rgb(47, 145, 130);
+  text-shadow: 1px 1px lightgrey;
+  font-size: 14px;
+}
+
+/* content styling*/
+.content {
+  background-color: lightgrey;
+  padding: 50px 10px 80px 10px;
+  overflow: hidden;
+}
+
+/* body background*/
+body.a{
+  background-color:  lightgrey
+}
+
+.col-md-12{
+  background-color: white;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.col-md-6{
+  background-color: white;
+  padding: 20px;
+  overflow: scroll;
+}
+.col{
+  background-color: white;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.img-container{
+  text-align: center;
+  display: block;
+}
+
+.small-img-container{
+  text-align: center;
+  display: block;
+  scale: 50%;
+}
+
+.img-float{
+  float:right;
+}
+
+p.a{
+  font-size: large;
+  padding:10px
+  
+}
+
+.green_border {
+  border-style: solid;
+  border-color:rgb(47, 145, 145);
+}
+
+
+/*footer styling*/
+.footer {
+    color: whitesmoke;
+    width:100%;
+    height:30px;
+    background-image: linear-gradient(130deg, lightgrey, rgb(47, 145, 145), rgb(35, 106, 106));
+ }
+  
+.alignright {
+	float: right;
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*Table formatting */
+#weather {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#weather td, #weather th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#weather tr:nth-child(even){background-color: #f2f2f2;}
+
+#weather tr:hover {background-color: #ddd}
+
+#weather th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: rgb(47, 145, 145); 
+  color: white;
+}
+
+/* small screen adjustments*/
+@media(max-width:767px){
+  .navbar{
+      padding:inherit;
+  }
+}

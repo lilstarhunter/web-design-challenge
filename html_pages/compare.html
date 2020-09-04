@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Analysis</title>
+    <link rel="stylesheet" type="text/css" href="./html_pages/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+     <!-- Bootstrap CDN -->
+    <!-- CSS only -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+      <!-- JS, Popper.js, and jQuery -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body class="a">
+  <!--NavBar-->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-image: linear-gradient(90deg, rgb(35, 106, 106),rgb(47, 145, 145), rgb(47, 145, 145),lightgrey)">
+    <a class="navbar-brand" href="#">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./data.html">Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./compare.html">Comparison</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./html_pages/temp.html">Temperature</a>
+            <a class="dropdown-item" href="./html_pages/humidity.html">Humidity</a>
+            <a class="dropdown-item" href="./html_pages/cloud.html">Cloudiness</a>
+            <a class="dropdown-item" href="./html_pages/wind.html">Windspeed</a>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--BODY -->
+  <div class = "container-fluid content">
+    <div class = "row">
+        <div class= "col">
+          <h2>Compare Plots: Latitude vs. X </h2>
+          <hr>
+          <p> Click on any plot to get an in-depth analysis</p>
+          <div class = "row"> 
+            <div class="col-12 col-md-6">
+              <a target="_blank" href="./html_pages/temp.html">
+                <div class="img-container">
+                  <h3> vs. Max Temperature</h3>
+<<<<<<< HEAD:html/compare.html
+                    <img src="/assets/temp_lat.png" width="100%"  title="temperature">  
+=======
+                    <img src="./Resources/lms_assets/temp_lat.png" width="100%"  title="temperature">  
+>>>>>>> 04cf91132f9f1e5139922fa381770899066d464e:html_pages/compare.html
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6">          
+                <a target="_blank" href="./html_pages/humidity.html">
+                  <div class="img-container">
+                    <h3> vs. Max Humidity</h3>
+<<<<<<< HEAD:html/compare.html
+                      <img src="/assets/hum_lat.png" width="100%"  title="humidity">  
+=======
+                      <img src="./Resources/lms_assets/hum_lat.png" width="100%"  title="humidity">  
+>>>>>>> 04cf91132f9f1e5139922fa381770899066d464e:html_pages/compare.html
+                  </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-6"> 
+              <a target="_blank" href="./html_pages/cloud.html">
+                <div class="img-container">
+                  <h3> vs. Max Cloud Coverage</h3>
+<<<<<<< HEAD:html/compare.html
+                    <img src="/assets/cloud_lat.png" width="100%"  title="cloudiness">  
+=======
+                    <img src="./Resources/lms_assets/cloud_lat.png" width="100%"  title="cloudiness">  
+>>>>>>> 04cf91132f9f1e5139922fa381770899066d464e:html_pages/compare.html
+                </div>
+              </a>
+            
+            </div>
+            <div class="col-12 col-md-6">
+              <a target="_blank" href="./html_pages/wind.html">
+                <div class="img-container">
+                  <h3> vs. Max Windspeed</h3>
+<<<<<<< HEAD:html/compare.html
+                    <img src="/assets/wind_lat.png" width="100%"  title="windspeed">  
+=======
+                    <img src="./Resources/lms_assets/wind_lat.png" width="100%"  title="windspeed">  
+>>>>>>> 04cf91132f9f1e5139922fa381770899066d464e:html_pages/compare.html
+                </div>
+              </a>
+            </div> 
+          </div>
+        </div>             
+    </div>            
+  </div>
+  
+   <!--Footer-->
+  <div class="footer">
+    <p class="alignright">Designed by: Lauren Stein</p>
+  </div>
+</body>
+</html>
